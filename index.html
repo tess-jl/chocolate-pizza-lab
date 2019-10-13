@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>Chocolate Pizza Lab</title>
 </head>
 
@@ -13,24 +15,29 @@
     <div class="wrapper">
         <div class="top">
             <header>
-                <img src='./assets/logo.png'>
-                <div>Delicious<div>
-                    <div>THE BEST FOOD BLOG ON THE WEB</div>
-
-                <img src='./assets/fb-icon.png'>
-                <img src='./assets/twit-icon.png'>
-                <img src='./assets/gp-icon.png'>
-                <img src='./assets/insta-icon.png'>
-                <img src='./assets/flic-icon.png'>
-                <img src='./assets/pint-icon.png'>
-                <img src='./assets/rss-icon.png'>
-                <img src='./assets/mail-icon.png'>
+                <div class="blog-name">
+                    <img id="logo" src='./assets/logo.png'>
+                    <h1 id="blog-name">Delicious<h1>
+                    <p id="motto">THE BEST FOOD BLOG ON THE WEB.</p>
+                </div>
+                
+                <div class="sharing">
+                    <img src='./assets/fb-icon.png'>
+                    <img src='./assets/twit-icon.png'>
+                    <img src='./assets/gp-icon.png'>
+                    <img src='./assets/insta-icon.png'>
+                    <img src='./assets/flic-icon.png'>
+                    <img src='./assets/pint-icon.png'>
+                    <img id="rss" src='./assets/rss-icon.png'>
+                    <img src='./assets/mail-icon.png'>
+                </div>
             </header> 
         </div>
+        <hr> 
         <div class="photo-and-text">
             <h2>Chocolate Pizza</h2> 
                 <div>POSTED ON 15 DEC 2013/DESSERTS</div>
-                <div><img src='./assets/print-icon.png'>PRINT</div>
+                <div class="print"><img src='./assets/print-icon.png'>PRINT</div>
             <img id="choc-pizza" src='./assets/choco-pizza.png'>
             <main>
                 <p>
@@ -45,8 +52,8 @@
             </main>
         </div>
         <section class="ingredients">
-            <ul>
-                <li> 1 1/2 cups milk </li>
+            <div class="checklist"
+                <input type="checkbox"><label>1 1/2 cups milk</label><br>
                 <li> 1/2 cup mascarpone </li>
                 <li> 1/2 tsp pink salt </li>
                 <li> 1 lb Black Mission Figs </li>
@@ -58,21 +65,26 @@
                 <li> 1 lemon, juiced </li> 
                 <li> 2 tbsp butter </li>
                 <li> 1 cup honey roasted pecans, rougly chopped </li>
-            </ul>
+            </div>
         </section>
-
+        <hr>
         <section class="author">
-            <img src='./assets/van-pic.png'>
+            <img id="headshot" src='./assets/van-pic.png'>
             <h4> Vanessa Stevenson </h4>
-            <p> Food enthsiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am. </p>
-            <button>SHARE RECIPE</button>
+            <button id="button">SHARE RECIPE</button>
+            <p class="bio"> Food enthsiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am. </p>
         </section> 
-        <footer class="bottom">
-                <img src='./assets/small-logo.png'>
-            Delicious &copy All Rights Reserved. Proudly published with Ghost. 
-        </footer>
-    </div>
 
+        <div class="logo-bottom">
+            <img src='./assets/small-logo.png'>
+        </div>
+
+        <footer class="bottom">
+            <p id="copy">Delicious &copy All Rights Reserved.</p>
+            <p id="last-line">Proudly published with Ghost.</p>
+        </footer>
+
+    </div>
     <script type="module" src="app.js"></script>
 </body>
 
