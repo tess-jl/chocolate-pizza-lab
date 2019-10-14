@@ -12,16 +12,23 @@ p {
     grid-template-columns: 1fr 5fr 1fr;
 }
 
+/* header {
+    width:50%;
+} */
+
 .top {
     grid-column: 2/3;
 }
 
 .blog-name {
     margin-top: 30px; 
+    width: 50%;
+    float: left; 
 }
 
 #logo {
     float: left;
+    margin-top: 10px; 
 }
 
 #blog-name {
@@ -31,7 +38,8 @@ p {
 #motto {
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
     font-size: 0.2em; 
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 #rss {
@@ -40,7 +48,9 @@ p {
 
 .sharing {
     float: right;
-    margin-top: 30px;
+    position: relative; 
+    margin-top: 40px; 
+    width: 50%; 
 }
 
 hr {
@@ -76,7 +86,6 @@ h2 {
 main {
     text-indent: 4%;
 }
-
 
 
 .ingredients {
