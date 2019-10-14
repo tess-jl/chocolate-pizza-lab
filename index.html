@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Chocolate Pizza Lab</title>
 </head>
 
@@ -36,7 +38,7 @@
         <hr> 
         <div class="photo-and-text">
             <h2>Chocolate Pizza</h2> 
-                <div>POSTED ON 15 DEC 2013/DESSERTS</div>
+                <div class="posted">POSTED ON 15 DEC 2013/DESSERTS</div>
                 <div class="print"><img src='./assets/print-icon.png'>PRINT</div>
             <img id="choc-pizza" src='./assets/choco-pizza.png'>
             <main>
@@ -52,19 +54,23 @@
             </main>
         </div>
         <section class="ingredients">
-            <div class="checklist"
-                <input type="checkbox"><label>1 1/2 cups milk</label><br>
-                <li> 1/2 cup mascarpone </li>
-                <li> 1/2 tsp pink salt </li>
-                <li> 1 lb Black Mission Figs </li>
-                <li> 1/2 cup brown sugar </li> 
-                <li> 2-4 tbsp water </li> 
-                <li> 1 1/2 cups heavy cream </li> 
-                <li class="slashed"> 1/3 granulated sugar </li>
-                <li class="slashed"> 2 egg yolks </li>
-                <li> 1 lemon, juiced </li> 
-                <li> 2 tbsp butter </li>
-                <li> 1 cup honey roasted pecans, rougly chopped </li>
+            <div class="checklist">
+                <div class="column1">
+                    <label class="checkbox"><input class="checked" type="checkbox">1 1/2 cups milk</label><br>
+                    <label><input type="checkbox">1/2 cup mascarpone</label><br>
+                    <input type="checkbox"><label>1/2 tsp pink salt</label><br>
+                    <input type="checkbox"><label>1 lb Black Mission Figs</label><br>
+                    <input type="checkbox"><label>1/2 cup brown sugar</label><br>
+                    <input type="checkbox"><label>2-4 tbsp water</label><br>
+                </div>
+                <div class="column2">    
+                    <input type="checkbox"><label>1 1/2 cups heavy cream</label><br> 
+                    <input type="checkbox"checked><label class="slashed">1/3 granulated sugar</label><br>
+                    <input type="checkbox"checked><label class="slashed">2 egg yolks</label><br>
+                    <input type="checkbox"><label>1 lemon, juiced</label><br>
+                    <input type="checkbox"><label>2 tbsp butter</label><br>
+                    <input type="checkbox"><label>1 cup honey roasted pecans, rougly <br> chopped</label><br>
+                </div>
             </div>
         </section>
         <hr>
